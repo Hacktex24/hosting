@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
+                url('imagen.jpg'); /* Asegúrate de que esta ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    font-family: Arial, sans-serif; /* Añade una fuente predeterminada */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #333; /* Cambia este color según tus preferencias */
+    background-color: rgba(128, 128, 128, 0.8); /* Fondo gris semitransparente */
+    padding: 20px;
+    margin: 0;
+    border-bottom: 2px solid #ccc; /* Línea debajo del título */
+    position: fixed; /* Hace que el título permanezca fijo */
+    width: 100%; /* Asegura que el título ocupe todo el ancho de la pantalla */
+    top: 0; /* Fija el título en la parte superior */
+    z-index: 1000; /* Asegura que el título esté por encima de otros elementos */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 80px; /* Añadir padding para separar el contenido del título fijo */
+}
+
+.section {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.section img {
+    width: 100%;
+    max-width: 300px; /* Ajustar el tamaño máximo de las imágenes */
+    height: auto;
+}
+
+.section h2 {
+    margin: 0; /* Ajusta el margen superior de los subtítulos */
+    padding: 10px 0; /* Ajusta el relleno superior e inferior de los subtítulos */
+    color: #333; /* Cambia este color según tus preferencias */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+}
